@@ -1,0 +1,21 @@
+@mixin for-size($size) {
+	@if $size == verry-small {
+		@media (max-width: 400px) { @content; }
+	}@else if $size == phone-only {
+		@media (max-width: 599px) { @content; }
+	}@else if $size == tablet-portrait-up {
+		@media (max-width: 720px) { @content; }
+	}@else if $size == tablet-landscape-up {
+		@media (max-width: 991px) { @content; }
+	}@else if $size == desktop-up {
+		@media (max-width: 1200px) { @content; }
+	}@else if $size == big-desktop-up {
+		@media (max-width: 1800px) { @content; }
+	}
+}
+
+@mixin centering($justify-content, $align-items) {
+	display: flex;
+	justify-content: $justify-content;
+	align-items: $align-items;
+}

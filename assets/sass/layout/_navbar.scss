@@ -1,0 +1,35 @@
+.navbar{
+	background-color: $white;
+	box-shadow: $nav-shadow;
+
+	@include for-size(phone-only){
+		padding: 0rem 1rem;
+		.navbar-brand img{
+			width: 70px;
+		}
+	}
+	.nav-item{
+		@include centering(center, center);
+		margin-left: 40px;
+
+	}
+	.cta{
+		@include for-size(tablet-portrait-up){
+			margin-left: 0px;
+			order: 0;
+			a{
+				padding: 5px 10px !important;
+				font-size: 13px !important;
+				line-height: 13px !important;
+				border-width: 1px;
+			}
+		}
+	}
+	.navbar-toggler{
+		color: $blue-pri;
+		@include for-size(tablet-landscape-up){
+			order: 1;
+			line-height: 10px;
+		}
+	}
+}

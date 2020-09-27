@@ -1,0 +1,19 @@
+.contact {
+	form {
+		width: 552px;
+		margin: 0 auto;
+
+		@include for-size(tablet-portrait-up) {
+			width: 100%;
+		}
+
+		textarea {
+			margin-bottom: 24px;
+			min-height: 205px;
+		}
+
+		button {
+			min-width: 100%;
+		}
+	}
+}

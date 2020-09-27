@@ -1,0 +1,48 @@
+%button {
+	font-family: 'Avenir Next', 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	transition: .35s;
+	line-height: 24px;
+	display: inline-block;
+	padding: 11px 24px !important;
+	border-radius: 0;
+	margin: 0;
+	cursor: pointer;
+
+	@include for-size(tablet-portrait-up) {
+		font-size: 14px;
+		line-height: 18px;
+		padding: 10px 20px !important;
+		max-width: 200px;
+	}
+}
+
+.btn-primary {
+	background-color: $blue-pri;
+	color: $white !important;
+	box-shadow: $blue-shadow;
+	border-color: $blue-pri;
+	@extend %button;
+
+	&:hover {
+		transition: .7s;
+		border-color: $blue-dark;
+		background-color: $blue-dark;
+		color: $white;
+	}
+}
+
+.btn-outline {
+	background-color: none;
+	color: $grey-pri !important;
+	border: 2px solid $grey-pri;
+	@extend %button;
+
+	&:hover {
+		transition: .7s;
+		background-color: $grey-pri;
+		color: $white !important;
+	}
+}

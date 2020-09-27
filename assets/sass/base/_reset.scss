@@ -1,0 +1,53 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+nav i {
+	vertical-align: middle;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
+
+input,
+textarea:focus {
+	outline: 0;
+}
+
+button:focus {
+	cursor: pointer;
+	outline: 0 !important;
+}
+
+li {
+	list-style: none;
+}

@@ -1,0 +1,133 @@
+@font-face {
+	font-family: "Avenir Next";
+	src: url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "GT Zirkon Trial";
+	src: url('../fonts/GTZirkon-Regular.ttf') format('truetype');
+}
+
+*,
+body {
+	font-family: $font-pri;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	color: $grey-pri-var;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-sec;
+	font-weight: 500;
+	color: $grey-pri;
+	margin-bottom: 24px;
+
+	@include for-size(tablet-portrait-up) {
+		text-align: center;
+		margin-bottom: 24px;
+		display: block;
+	}
+}
+
+.display-1 {
+	font-size: 64px;
+	line-height: 72px;
+	letter-spacing: -0.03em;
+
+	@include for-size(desktop-up) {
+		font-size: 52px;
+		line-height: 60px;
+	}
+
+	@include for-size(tablet-portrait-up) {
+		font-size: 45px;
+		line-height: 45px;
+	}
+
+	@include for-size(phone-only) {
+		font-size: 32px;
+		line-height: 32px;
+	}
+}
+
+.display-2 {
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -0.01em;
+	max-width: 250px;
+
+
+	@include for-size(phone-only) {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	@include for-size(tablet-portrait-up) {
+		max-width: 100% !important;
+	}
+}
+
+.display-3 {
+	font-size: 36px;
+	line-height: 44px;
+	color: $blue-dark;
+	font-feature-settings: 'tnum'on, 'lnum'on;
+}
+
+.paragraph {
+	font-family: $font-pri;
+	font-size: 18px;
+	line-height: 24px;
+	color: $grey-pri-var;
+	margin-bottom: 48px;
+	font-feature-settings: 'tnum'on, 'lnum'on;
+
+	@include for-size(desktop-up) {
+		margin-bottom: 24px;
+	}
+
+	@include for-size(tablet-portrait-up) {
+		text-align: center;
+		display: block;
+		margin-bottom: 32px;
+		font-size: 16px;
+	}
+}
+
+.nav-link {
+	font-family: $font-pri;
+	font-size: 16px !important;
+	line-height: 24px;
+	color: $grey-pri-var;
+}
+
+.headline {
+	font-family: $font-pri;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: $grey-pri;
+	font-feature-settings: 'tnum'on, 'lnum'on;
+
+	@include for-size(tablet-portrait-up) {
+		font-size: 14px;
+	}
+}
+
+.caption {
+	font-family: $font-pri;
+	font-size: 14px;
+	line-height: 20px;
+	font-feature-settings: 'tnum'on, 'lnum'on;
+
+	@include for-size(phone-only) {
+		font-size: 12px;
+	}
+}
